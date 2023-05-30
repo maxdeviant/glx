@@ -4,7 +4,7 @@ import glx/stringx
 pub fn stringx_lines_empty_string_test() {
   ""
   |> stringx.lines()
-  |> should.equal([""])
+  |> should.equal([])
 }
 
 pub fn stringx_lines_single_line_test() {
@@ -13,8 +13,14 @@ pub fn stringx_lines_single_line_test() {
   |> should.equal(["this is all on one line"])
 }
 
+pub fn stringx_lines_single_lf_test() {
+  "\n"
+  |> stringx.lines()
+  |> should.equal([])
+}
+
 pub fn stringx_lines_lf_test() {
-  let expected = ["one", "two", "", "three", "", "", "four"]
+  let expected = ["one", "two", "three", "four"]
 
   "one\ntwo\n\nthree\n\n\nfour"
   |> stringx.lines()
@@ -22,15 +28,21 @@ pub fn stringx_lines_lf_test() {
 }
 
 pub fn stringx_lines_trailing_lf_test() {
-  let expected = ["line1", "line2", "", "", ""]
+  let expected = ["line1", "line2"]
 
   "line1\nline2\n\n\n"
   |> stringx.lines()
   |> should.equal(expected)
 }
 
+pub fn stringx_lines_single_crlf_test() {
+  "\r\n"
+  |> stringx.lines()
+  |> should.equal([])
+}
+
 pub fn stringx_lines_crlf_test() {
-  let expected = ["one", "two", "", "three", "", "", "four"]
+  let expected = ["one", "two", "three", "four"]
 
   "one\r\ntwo\r\n\r\nthree\r\n\r\n\r\nfour"
   |> stringx.lines()
@@ -38,7 +50,7 @@ pub fn stringx_lines_crlf_test() {
 }
 
 pub fn stringx_lines_trailing_crlf_test() {
-  let expected = ["line1", "line2", "", "", ""]
+  let expected = ["line1", "line2"]
 
   "line1\r\nline2\r\n\r\n\r\n"
   |> stringx.lines()

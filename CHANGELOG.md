@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Renamed `glx/string` to `glx/stringx`
+- `glx/stringx`
+  - `lines`: Empty lines are now excluded from the resulting list.
 
 ## [0.1.0] - 2023-05-30
 

@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2023-05-30
+
 ### Changed
 
 - Renamed `glx/string` to `glx/stringx`
@@ -20,5 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `glx/string`
   - `lines`
 
-[unreleased]: https://github.com/maxdeviant/glx/compare/v0.1.0...HEAD
+[unreleased]: https://github.com/maxdeviant/glx/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/maxdeviant/glx/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/maxdeviant/glx/compare/75a6202...v0.1.0

@@ -1,18 +1,18 @@
 import gleeunit/should
-import glx/string
+import glx/stringx
 
-pub fn string_lines_lf_test() {
+pub fn stringx_lines_lf_test() {
   let expected = ["one", "two", "", "three", "", "", "four"]
 
   "one\ntwo\n\nthree\n\n\nfour"
-  |> string.lines()
+  |> stringx.lines()
   |> should.equal(expected)
 }
 
-pub fn string_lines_crlf_test() {
+pub fn stringx_lines_crlf_test() {
   let expected = ["one", "two", "", "three", "", "", "four"]
 
   "one\r\ntwo\r\n\r\nthree\r\n\r\n\r\nfour"
-  |> string.lines()
+  |> stringx.lines()
   |> should.equal(expected)
 }

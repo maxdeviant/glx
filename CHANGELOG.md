@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.3.0] - 2024-01-25
 
+### Changed
+
 - Upgraded Gleam `stdlib` to v0.34
 
 ## [0.2.0] - 2023-05-30

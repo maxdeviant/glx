@@ -5,7 +5,7 @@ licences = ["MIT"]
 repository = { type = "github", user = "maxdeviant", repo = "glx" }
 
 [dependencies]
-gleam_stdlib = "~> 0.34"
+gleam_stdlib = "~> 0.34 or ~> 1.0"
 
 [dev-dependencies]
 gleeunit = "~> 1.0"

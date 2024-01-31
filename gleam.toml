@@ -1,5 +1,5 @@
 name = "glx"
-version = "0.3.0"
+version = "0.3.1"
 description = "Extensions to the Gleam standard library."
 licences = ["MIT"]
 repository = { type = "github", user = "maxdeviant", repo = "glx" }
